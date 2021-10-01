@@ -40,3 +40,17 @@ let wanda = {
     marks: [7, 8]
 };
 let antraKlase = [petriukas, maryte, wanda];
+class Pet {
+}
+class Dog extends Pet {
+}
+class Cat extends Pet {
+}
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['brad', 'John', 'Jill']);
+strArray.push(1); // Throws error
+numArray.push(true);
